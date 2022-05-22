@@ -8,10 +8,10 @@ from algorithms import binarize_otsu, binarize_modified_otsu, binarize_niblack, 
 from matplotlib import pyplot as plt
 
 binarizers = {
-    'otsu': binarize_otsu,
-    'modified_otsu': binarize_modified_otsu,
-    # 'niblack_41x41_alpha=1.2': partial(binarize_niblack, kernel_size=41, alpha=1.2),
-    # 'modified_niblack_21x21_alpha=1.2': partial(binarize_modidfied_niblack, kernel_size=41, alpha=1.2, std_min=8),
+    # 'otsu': binarize_otsu,
+    # 'modified_otsu': binarize_modified_otsu,
+    'niblack_41x41_alpha=1.2': partial(binarize_niblack, kernel_size=41, alpha=1.2),
+    'modified_niblack_21x21_alpha=1.2': partial(binarize_modidfied_niblack, kernel_size=41, alpha=1.2, std_min=8),
 }
 
 
